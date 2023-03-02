@@ -30,7 +30,7 @@ export class BrandAiInfraStack extends cdk.Stack {
       const brandAIApi = new apiGateway.RestApi(this,"RestApi",{
           restApiName: "BrandAI API",
           
-      })
+      }) 
 
       const lambdaApiIntegration = new apiGateway.LambdaIntegration(apiLambda)
       
