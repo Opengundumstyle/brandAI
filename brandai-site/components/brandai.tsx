@@ -20,9 +20,15 @@ const BrandAI: React.FC = () =>{
         setKeywords(data.keywords)
         sethasResult(true)
     }
+    
+    const onReset =() =>{
+      setPrompt("")
+      sethasResult(false)
+  }
+    
     let displayElement = null;
     if (hasResult){
-         displayElement = <Result snippet={snippet} keywords={keywords}/>
+         displayElement = <Result snippet={snippet} keywords={keywords} onBack={onReset}/>
     }else{
 
          displayElement = <Form prompt={prompt} setPrompt={setPrompt} onSubmit={onSubmit} />
