@@ -61,8 +61,8 @@ const BrandAI: React.FC = () =>{
           {displayElement}
         </div>
 
-          <div className="text-gray-500 text-center mt-2 text-lg">
-             project by  <a className="underline" href="https://opengundumstyle.github.io/index.html" target="_blank">Zhile</a>
+          <div className="text-gray-500 text-center mt-5 text-lg">
+             developer  <a className="underline" href="https://opengundumstyle.github.io/index.html" target="_blank">Zhile</a>
           </div>
 
       </div>
