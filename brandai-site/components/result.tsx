@@ -12,7 +12,7 @@ const Result: React.FC<ResultProps> = (props) =>{
           keywordElements.push(element)
     }
 
-    const keywordsElementsHolder = <div className="flex flex-wrap gap-2">{keywordElements}</div>
+    const keywordsElementsHolder = <div className="flex flex-wrap gap-2 mt-3">{keywordElements}</div>
 
     const resultSection =(label:string,body:any)=>{
           return( 

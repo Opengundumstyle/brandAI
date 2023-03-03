@@ -44,6 +44,7 @@ const BrandAI: React.FC = () =>{
     
      return (
       <div className="h-screen flex">
+
       <div className="max-w-md m-auto p-2">
         <div className="bg-white p-6 rounded-md relative">
           <div className="flex flex-col items-center pb-6">
@@ -55,8 +56,17 @@ const BrandAI: React.FC = () =>{
           </div>
           {displayElement}
         </div>
+
+          <div className="text-gray-500 text-center mt-2 text-lg">
+             project by  <a className="underline" href="https://opengundumstyle.github.io/index.html" target="_blank">Zhile</a>
+          </div>
+
       </div>
+        
+
     </div>
+       
+        
          
      )
 }

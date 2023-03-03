@@ -32,7 +32,7 @@ const Form: React.FC<FormProps> = (props) =>{
           <input 
             className="p-2 w-full rounded-md outline outline-offset-2 outline-slate-400 focus:outline-cyan-400/100 focus:outline text-slate-700"
             type="text" 
-            placeholder="protein powder" 
+            placeholder="cup of proteins nutrition" 
             value = {props.prompt}
             onChange={(e) => updatePromptVal(e.currentTarget.value)}/>
             <div className={"flex justify-between my-2 text-sm " + statusColor}>
