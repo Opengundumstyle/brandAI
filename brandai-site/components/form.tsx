@@ -17,6 +17,7 @@ const Form: React.FC<FormProps> = (props) =>{
            }
      }
 
+
      let statusColor= "text-slate-500"
      let statusText = null
      if(!isPromptValid){

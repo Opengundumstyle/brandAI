@@ -25,7 +25,7 @@ const Result: React.FC<ResultProps> = (props) =>{
 
    return( <>
       <div>
-              {resultSection(" Your prompt:", <div className="text-lg font-bold text-slate-800"> {props.prompt}</div>)}
+              {resultSection(" Your prompt:", <div className="text-lg font-bold text-slate-800"> {props.prompt||"cup of proteins nutrition"}</div>)}
               {resultSection("Branding snippet:",props.snippet)}  
               {resultSection(" Keywords:",keywordsElementsHolder)}
         <button  className="bg-gradient-to-r from-teal-400 to-blue-500 disabled:opacity-50 w-full p-2 rounded-md text-lg text-white mt-5"

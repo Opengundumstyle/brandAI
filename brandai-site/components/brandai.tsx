@@ -15,7 +15,11 @@ const BrandAI: React.FC = () =>{
 
     const onSubmit =()=>{
           setIsLoading(true)
+          if(prompt) {
           fetch(`${ENDPOINT}?prompt=${prompt}`).then(res => res.json()).then(onResult)
+          }else{
+            fetch(`${ENDPOINT}?prompt=cup of proteins nutrition`).then(res => res.json()).then(onResult)
+          }
     }
 
     const onResult =(data:any) =>{
