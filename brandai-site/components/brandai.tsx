@@ -40,7 +40,7 @@ const BrandAI: React.FC = () =>{
     }
 
     const gradientTextStyle =
-    "text-4xl text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 font-light w-fit mx-auto";
+    "text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500 font-light w-fit mx-auto";
     
      return (
       <div className="h-screen flex">
@@ -50,8 +50,8 @@ const BrandAI: React.FC = () =>{
             <div className="flex justify-center mt-2 ">
               <Image src={logo} alt={"brandai-logo"} width={100} height={100}/>
             </div>
-            <h2 className={gradientTextStyle + " font-light mt-0"}>BrandAI</h2>
-            <div>Your AI branding assistant</div>
+            <h2 className={ gradientTextStyle + " text-4xl mt-0"}>BrandAI</h2>
+            <div className={ " text-1xl "+ gradientTextStyle}>Your AI branding assistant</div>
           </div>
           {displayElement}
         </div>
