@@ -18,7 +18,7 @@ const Form: React.FC<FormProps> = (props) =>{
      }
      
     return <>
-        <p>
+        <p className="">
             Tell me what your brand is about and I will generate copy and keywords for you.
           </p>
           <input type="text" 

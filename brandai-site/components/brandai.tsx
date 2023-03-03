@@ -40,8 +40,10 @@ const BrandAI: React.FC = () =>{
     
      return (
          <>
-          <h1>BrandAI</h1>
+          <div className="bg-gray-700">
+          <h1  className="text-3xl font-light text-white ">BrandAI</h1>
           {displayElement}
+          </div>
         </>
          
      )
