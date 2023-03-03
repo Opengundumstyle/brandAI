@@ -40,7 +40,7 @@ const Form: React.FC<FormProps> = (props) =>{
                <div>{props.prompt.length}/{props.characterLimit}</div>
             </div>
           <button 
-          className="bg-gradient-to-r from-teal-400 to-blue-500 disabled:opacity-50 w-full p-2 rounded-md text-lg text-white"
+          className="bg-gradient-to-r from-teal-400 to-blue-500 disabled:opacity-50 w-full p-2 rounded-md text-lg text-white mt-5"
           onClick={props.onSubmit} disabled={props.isLoading ||!isPromptValid}>Submit</button>
        </>
 }
