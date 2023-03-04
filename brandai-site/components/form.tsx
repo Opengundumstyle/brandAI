@@ -9,14 +9,21 @@ interface FormProps{
 
 
 const Form: React.FC<FormProps> = (props) =>{
-   
+     
+     let submit = 'Submit'
      const isPromptValid = props.prompt.length <  props.characterLimit;
+
      const updatePromptVal = (txt:string) =>{
            if(txt.length <= props.characterLimit){
             props.setPrompt(txt)
            }
      }
 
+     const displayLoading = (loading:boolean) =>{
+            if(loading) submit = 'Loading ...'
+            return submit
+     }
+    
 
      let statusColor= "text-slate-500"
      let statusText = null
@@ -42,7 +49,7 @@ const Form: React.FC<FormProps> = (props) =>{
             </div>
           <button 
           className="bg-gradient-to-r from-teal-400 to-blue-500 disabled:opacity-50 w-full p-2 rounded-md text-lg text-white mt-5"
-          onClick={props.onSubmit} disabled={props.isLoading ||!isPromptValid}>Submit</button>
+          onClick={props.onSubmit} disabled={props.isLoading ||!isPromptValid}>{displayLoading(props.isLoading)}</button>
        </>
 }
 
