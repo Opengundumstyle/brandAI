@@ -15,3 +15,4 @@ This is a SaaS application that generates AI branding snippets and keywords for 
 
 
 ## Architecture
+<img src="https://github.com/Opengundumstyle/brandAI/blob/main/architect.png">
