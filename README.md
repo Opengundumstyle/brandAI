@@ -14,5 +14,14 @@ This is a SaaS application that generates AI branding snippets and keywords for 
 
 
 
-## Architecture
+## Overview
+How I planned out the overall system for the app at the beginning:
 <img src="https://github.com/Opengundumstyle/brandAI/blob/main/architect.png">
+
+### front end
+
+
+### backend
+
+
+### intrastructure
