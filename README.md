@@ -9,7 +9,7 @@ This is a SaaS application that generates AI branding snippets and keywords for 
 - python
 - fastapi
 - openai api
-- aws lamda
+- aws lambda
 - docker
 
 
